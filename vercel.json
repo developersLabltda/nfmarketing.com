@@ -1,0 +1,14 @@
+{
+  "buildCommand": "vite build",
+  "cleanUrls": true,
+  "installCommand": "npm install",
+  "outputDirectory": "dist",
+  "public": true,
+  "framework": "vite",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
