@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./styles/index.css";
-import { Container, Navbar } from "./components/index";
+import { Container, Navbar,  Main} from "./components/index";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
@@ -23,6 +23,7 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
             </a>
           </div>
         </Navbar>
+        <Main />
       </Container>
     </main>
   </React.StrictMode>
