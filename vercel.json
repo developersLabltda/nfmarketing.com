@@ -1,7 +1,7 @@
 {
   "buildCommand": "vite build",
   "cleanUrls": true,
-  "installCommand": "npm install",
+  "installCommand": "pnpm install",
   "outputDirectory": "dist",
   "public": true,
   "framework": "vite",
