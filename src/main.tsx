@@ -1,10 +1,29 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App.tsx";
 import "./styles/index.css";
+import { Container, Navbar } from "./components/index";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
-    <App />
+    <main className="w-screen h-screen  text-center text-white">
+      <Container>
+        <Navbar>
+          <div className="hidden md:flex flex-row gap-4 w-full justify-center">
+            <a
+              href="#"
+              className="text-white hover:text-gray-300 hover:underline"
+            >
+              Inicio
+            </a>
+            <a href="#" className="text-white hover:text-gray-400">
+              Sobre
+            </a>
+            <a href="#" className="text-white hover:text-gray-400">
+              Contato
+            </a>
+          </div>
+        </Navbar>
+      </Container>
+    </main>
   </React.StrictMode>
 );
