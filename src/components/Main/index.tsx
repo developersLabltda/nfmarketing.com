@@ -3,7 +3,7 @@ function Main() {
     <div className="w-full max-h-full h-5/6  flex flex-col items-center justify-between text-left">
       <div className="flex flex-col justify-center gap-6 md:flex-row w-full md:justify-between mt-14 sm:mt-24 md:mt-28">
         <h1 className="m-1 text-5xl sm:text-6xl font-normal max-w-lg">
-          Design é a arte de <span className="font-bold">transformar</span>{" "}
+          Design é a arte de <span className="font-semibold sm:font-bold">transformar</span>{" "}
           problemas em oportunidades visuais.
         </h1>
         <img
