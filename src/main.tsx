@@ -10,15 +10,15 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
         <Navbar>
           <div className="hidden md:flex flex-row gap-4 w-full justify-center">
             <a
-              href="#"
+              href="#inicio"
               className="text-white hover:text-gray-300 hover:underline"
             >
               Inicio
             </a>
-            <a href="#" className="text-white hover:text-gray-400">
+            <a href="#sobre" className="text-white hover:text-gray-400">
               Sobre
             </a>
-            <a href="#" className="text-white hover:text-gray-400">
+            <a href="#contato" className="text-white hover:text-gray-400">
               Contato
             </a>
           </div>
@@ -27,6 +27,8 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
         <About />
         <Contact />
       </Container>
+    
+
     </main>
   </React.StrictMode>
 );
