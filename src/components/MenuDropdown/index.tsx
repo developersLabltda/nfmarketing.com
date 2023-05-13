@@ -4,9 +4,9 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 
 const links = [
-  { title: "Inicio", href: "#" },
-  { title: "Sobre", href: "#" },
-  { title: "Contato", href: "#" },
+  { title: "Inicio", href: "#inicio" },
+  { title: "Sobre", href: "#sobre" },
+  { title: "Contato", href: "#contato" },
 ];
 
 function MenuMobile() {
