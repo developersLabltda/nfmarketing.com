@@ -5,7 +5,7 @@ import { Container, Navbar, Main, About, Contact } from "./components/index";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
-    <main className="w-screen h-screen  text-center text-white">
+    <main className="w-screen h-screen  text-center text-white ">
       <Container>
         <Navbar>
           <div className="hidden md:flex flex-row gap-4 w-full justify-center">
