@@ -3,15 +3,8 @@ import { motion } from "framer-motion";
 import { Dialog, Transition } from "@headlessui/react";
 import { useState, Fragment } from "react";
 function About() {
-  const [isOpen, setIsOpen] = useState<boolean>(true);
+  const [isOpen, setIsOpen] = useState<boolean>(false);
 
-  function closeModal() {
-    setIsOpen(false);
-  }
-
-  function openModal() {
-    setIsOpen(true);
-  }
   return (
     <>
       <div
@@ -47,7 +40,10 @@ function About() {
               )}
             </Scene>
 
-            <button className="px-4 py-3 w-44 sm:min-w-fit sm:max-w-xs sm:px-12 sm:py-4 bg-[#404040] rounded-2xl hover:bg-[#595858] text-md font-bold transform transition-transform duration-500 hover:scale-105">
+            <button
+              onClick={() => setIsOpen(true)}
+              className="px-4 py-3 w-44 sm:min-w-fit sm:max-w-xs sm:px-12 sm:py-4 bg-[#404040] rounded-2xl hover:bg-[#595858] text-md font-bold transform transition-transform duration-500 hover:scale-105"
+            >
               Cursos e formações
             </button>
           </div>
@@ -71,7 +67,6 @@ function About() {
                   className="self-end"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: progress > 0.3 ? 1 : 0 }}
-                  // onClick={openModal}
                 >
                   <motion.img
                     src="/images/1000canva.png"
@@ -88,7 +83,11 @@ function About() {
       </div>
 
       <Transition appear show={isOpen} as={Fragment}>
-        <Dialog as="div" className="relative z-10" onClose={closeModal} >
+        <Dialog
+          as="div"
+          className="relative z-10"
+          onClose={() => setIsOpen(false)}
+        >
           <Transition.Child
             as={Fragment}
             enter="ease-out duration-300"
@@ -117,13 +116,15 @@ function About() {
                     as="h3"
                     className="text-lg font-medium leading-6 text-gray-900"
                   >
-                   Mais de 1000 designs feitos no Canva
+                    Cursos e formações
                   </Dialog.Title>
                   <div className="mt-2">
-                    
+                    <img
+                      src="/images/cursos.jpeg"
+                      alt="cursos"
+                      className="object-contain"
+                    />
                   </div>
-
-            
                 </Dialog.Panel>
               </Transition.Child>
             </div>
