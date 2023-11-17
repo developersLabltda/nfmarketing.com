@@ -20,7 +20,7 @@ function About() {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: progress > 0.3 ? 1 : 0 }}
                 >
-                  Representada por Natanael Camargo, da NF Marketing, tem mais
+                  Representada por Natanael Camargo da NF Marketing, tem mais
                   de 6 anos de experiência em marketing digital, design e edição
                   de vídeo personalizado para empresas em Botucatu - SP.
                 </motion.p>

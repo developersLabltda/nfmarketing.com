@@ -1,7 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./styles/index.css";
-import { Container, Navbar, Main, About, Contact } from "./components/index";
+import {
+  Container,
+  Navbar,
+  Main,
+  About,
+  Contact,
+  Slider,
+} from "./components/index";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
@@ -25,10 +32,9 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
         </Navbar>
         <Main />
         <About />
+        <Slider />
         <Contact />
       </Container>
-    
-
     </main>
   </React.StrictMode>
 );
