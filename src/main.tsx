@@ -12,7 +12,7 @@ import {
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
-    <main className="w-screen h-screen  text-center text-white ">
+    <main className="w-full h-full text-center text-white">
       <Container>
         <Navbar>
           <div className="hidden md:flex flex-row gap-4 w-full justify-center">
@@ -20,7 +20,7 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
               href="#inicio"
               className="text-white hover:text-gray-300 hover:underline"
             >
-              Inicio
+              Início
             </a>
             <a href="#sobre" className="text-white hover:text-gray-400">
               Sobre
@@ -31,6 +31,9 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
           </div>
         </Navbar>
         <Main />
+      </Container>
+
+      <Container>
         <About />
         <Slider />
         <Contact />

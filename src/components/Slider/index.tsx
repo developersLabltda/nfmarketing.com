@@ -5,8 +5,9 @@ import {
   Scrollbar,
   A11y,
   EffectFade,
+  Autoplay,
 } from "swiper/modules";
-import 'swiper/css/effect-fade';
+import "swiper/css/effect-fade";
 
 import slider1 from "./sliders/slide1.jpeg";
 import slider2 from "./sliders/slide2.jpeg";
@@ -23,14 +24,23 @@ function Slider() {
   const slideImages = [slider1, slider2, slider3, slider4];
 
   return (
-    <div className="h-screen flex flex-col justify-center items-center">
-      <h1 className="text-4xl font-bold mb-6 underline ">Nossos trabalhos </h1>
+    <div className="h-screen flex flex-col w-full justify-center items-center text-center">
+      <h1 className="text-4xl font-bold mb-6 underline mx-auto">
+        Nossos trabalhos{" "}
+      </h1>
       <div className="flex items-center justify-center">
         <Swiper
-          modules={[Navigation, Pagination, Scrollbar, A11y, EffectFade]}
+          modules={[
+            Navigation,
+            Pagination,
+            Scrollbar,
+            A11y,
+            EffectFade,
+            Autoplay,
+          ]}
           spaceBetween={50}
           effect="fade"
-          autoplay
+          autoplay={{ delay: 2000, disableOnInteraction: false }}
           grabCursor={true}
           slidesPerView={1}
           scrollbar={{ draggable: true }}

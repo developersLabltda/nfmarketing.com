@@ -13,21 +13,21 @@ function About() {
       >
         <Controller>
           <div className="flex flex-col gap-8 m-2 text-left max-w-lg">
-            <Scene duration={600} triggerHook={0.8}>
+            <Scene duration={300} triggerHook={"#sobre"}>
               {(progress: number) => (
                 <motion.p
                   className="text-3xl"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: progress > 0.3 ? 1 : 0 }}
                 >
-                  Representada por Natanael Camargo da NF Marketing, tem mais
-                  de 6 anos de experiência em marketing digital, design e edição
-                  de vídeo personalizado para empresas em Botucatu - SP.
+                  Representada por Natanael Camargo, A NF Marketing tem mais de
+                  6 anos de experiência em marketing digital, design e edição de
+                  vídeo personalizado para empresas em Botucatu - SP.
                 </motion.p>
               )}
             </Scene>
 
-            <Scene duration={400} triggerHook={0.8}>
+            <Scene duration={400} triggerHook={"#sobre"}>
               {(progress: number) => (
                 <motion.p
                   className="text-2xl font-semibold"
@@ -48,8 +48,8 @@ function About() {
             </button>
           </div>
 
-          <div className="flex sm:flex-col mt-4 h-60 sm:h-full justify-stretch gap-4 md:gap-12">
-            <Scene duration={800} triggerHook={0.8}>
+          <div className="flex sm:flex-col mt-5 h-60 sm:h-full justify-stretch gap-4 md:gap-12">
+            <Scene duration={500} triggerHook={"#sobre"}>
               {(progress: number) => (
                 <motion.img
                   src="/images/softwares.svg"
@@ -61,21 +61,45 @@ function About() {
               )}
             </Scene>
 
-            <Scene duration={800} triggerHook={0.8}>
+            <Scene duration={400} triggerHook={"#sobre"}>
               {(progress: number) => (
-                <motion.button
-                  className="self-end"
+                <motion.div
+                  className="self-start flex flex-col gap-5   justify-between w-full "
                   initial={{ opacity: 0 }}
                   animate={{ opacity: progress > 0.3 ? 1 : 0 }}
                 >
                   <motion.img
-                    src="/images/1000canva.png"
+                    src="/images/capcut.png"
                     alt="icones"
-                    className="w-32 sm:w-48 rotate-12"
+                    className="w-10 sm:w-16 -rotate-12"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: progress > 0.3 ? 1 : 0 }}
                   />
-                </motion.button>
+                  <motion.img
+                    src="/images/photoshop-lightroom.png"
+                    alt="icones"
+                    className="w-10 sm:w-16 rotate-12"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: progress > 0.3 ? 1 : 0 }}
+                  />
+                  <Scene duration={500} triggerHook={"#sobre"}>
+                    {(progress: number) => (
+                      <motion.button
+                        className="self-end"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: progress > 0.3 ? 1 : 0 }}
+                      >
+                        <motion.img
+                          src="/images/1000canva.png"
+                          alt="icones"
+                          className="w-52 sm:w-48 rotate-12"
+                          initial={{ opacity: 0 }}
+                          animate={{ opacity: progress > 0.3 ? 1 : 0 }}
+                        />
+                      </motion.button>
+                    )}
+                  </Scene>
+                </motion.div>
               )}
             </Scene>
           </div>
