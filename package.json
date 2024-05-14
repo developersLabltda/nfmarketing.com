@@ -7,7 +7,10 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,md,mdx,css,yaml,yml}\"",
+    "check": "prettier --check \"**/*.{ts,tsx,js,jsx,md,mdx,css,yaml,yml}\"",
+    "preview": "vite preview",
+    "prepare": "husky"
   },
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
@@ -32,7 +35,9 @@
     "eslint": "^8.40.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.3.5",
+    "husky": "^9.0.11",
     "postcss": "^8.4.23",
+    "prettier": "^3.2.5",
     "tailwindcss": "^3.3.2",
     "typescript": "^5.0.4",
     "vite": "^4.3.5"
