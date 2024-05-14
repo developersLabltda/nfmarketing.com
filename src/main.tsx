@@ -39,5 +39,5 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
         <Contact />
       </Container>
     </main>
-  </React.StrictMode>
+  </React.StrictMode>,
 );

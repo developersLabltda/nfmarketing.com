@@ -11,12 +11,10 @@ function Contact() {
 
   const onSubmit: SubmitHandler<FormData> = (data) => {
     const message = `Olá, meu nome é ${data.name}, estou interessado no serviço de ${data.service}. ${data.description}`;
- 
+
     const whatsappLink = `https://wa.me/5514998067976?text=${encodeURIComponent(message)}`;
 
     window.open(whatsappLink);
-
-
   };
 
   return (
@@ -59,13 +57,19 @@ function Contact() {
       </form>
 
       <div className="flex flex-row gap-6 items-center text-1xl sm:text-2xl font-semibold mt-12">
-        <a href="https://www.instagram.com/nf.marketing.oficial/" target="_blank" rel="noopener noreferrer">
-        <img src="/images/instagram.png" alt="icon" className="w-8 sm:w-12" />
-        
+        <a
+          href="https://www.instagram.com/nf.marketing.oficial/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="/images/instagram.png" alt="icon" className="w-8 sm:w-12" />
         </a>
-        <a href="https://wa.me/5514998067976" target="_blank" rel="noopener noreferrer">
-        <img src="/images/whatsapp.png" alt="icon" className="w-8 sm:w-12" />
-        
+        <a
+          href="https://wa.me/5514998067976"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="/images/whatsapp.png" alt="icon" className="w-8 sm:w-12" />
         </a>
       </div>
     </div>
